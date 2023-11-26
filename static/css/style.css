@@ -1,0 +1,540 @@
+@import url(./variables.css);
+
+.header {
+  position: relative;
+}
+
+.header .navbar {
+  background: var(--light-alt);
+}
+
+.header .navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header .navbar .navbar-brand img {
+  width: 80px;
+}
+
+.header .navbar .navbar-brand span {
+  font-size: 34px;
+  font-weight: bold;
+  font-family: var(--logo);
+  color: var(--primary);
+}
+
+.header .navbar .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark);
+  margin: 5px 12px;
+}
+
+.header .navbar .button {
+  padding: 18px 30px;
+}
+
+.header .navbar .navbar-toggler {
+  background: var(--primary);
+  color: var(--light);
+  padding: 12px 15px;
+  border: 0;
+  box-shadow: none;
+  outline: 0;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  padding: 150px 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 85%;
+  width: 100%;
+  background: var(--light-alt);
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: var(--sans-serif-alt);
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--primary);
+  position: relative;
+  z-index: 4;
+}
+
+.hero h5 {
+  font-size: 25px;
+  font-weight: 400;
+  /* font-family: var(--sans-serif-alt); */
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--dark);
+  position: relative;
+  z-index: 4;
+}
+
+.hero .card {
+  padding: 20px;
+  border: 0;
+  background: var(--light);
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 80px 80px 0 80px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 4;
+}
+
+.hero .card .form-control {
+  padding: 9px 20px;
+  border-color: var(--primary);
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+.hero .card .form-control:focus {
+  border-color: var(--secondary);
+}
+
+.hero img {
+  width: 85%;
+  margin: auto;
+  position: relative;
+  z-index: 4;
+}
+/* Card Info */
+
+.card-info {
+  padding: 150px 0;
+}
+
+.card-info .card {
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--light-alt);
+  border: 0;
+}
+
+.card-info .card h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark);
+  font-family: var(--sans-serif-alt);
+}
+
+.card-info .card h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--primary);
+  font-family: var(--sans-serif-alt);
+}
+
+/* Online Courses */
+.online-courses .card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 0;
+  background: var(--light);
+}
+
+.online-courses .card hr {
+  color: #9e9e9e;
+}
+
+.online-courses .image .img-text span {
+  display: flex;
+  padding: 10px 12px;
+  font-weight: 600;
+  background: var(--secondary);
+  color: var(--light);
+  border-radius: 10px;
+}
+
+.online-courses .image {
+  position: relative;
+}
+
+.online-courses .image::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(53, 174, 226, 0.055) 70%, #1e95c8d0);
+}
+
+.online-courses .image .img-text {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.online-courses .image .img-text .stars {
+  display: flex;
+  gap: 5px;
+}
+
+.online-courses .image .img-text .stars i {
+  color: #f5e400;
+}
+
+.online-courses .card .info-text {
+  padding: 20px;
+}
+
+.online-courses .card h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 10px;
+  font-family: var(--sans-serif-alt);
+}
+
+.online-courses .card p span {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.online-courses .card .info-text .footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.online-courses .card .info-text .footer-text p i {
+  color: var(--primary);
+}
+
+.online-courses .nav-pills {
+  margin-bottom: 40px;
+}
+
+.online-courses .nav-pills .nav-link {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 0;
+  padding-left: 0;
+  margin-right: 20px;
+  color: var(--dark);
+}
+
+.online-courses .nav-pills .nav-link.active {
+  background: none;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Our Instructor */
+
+.instructor {
+  position: relative;
+}
+
+.instructor .card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 0;
+  background: var(--light);
+  text-align: center;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.instructor .card hr {
+  color: #9e9e9e;
+}
+
+.instructor .heading::after {
+  background: var(--light);
+}
+
+.instructor .card .info-text {
+  padding: 20px;
+}
+
+.instructor .card h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 10px;
+  font-family: var(--sans-serif-alt);
+}
+
+.instructor .card p span {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.instructor .card .info-text .footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instructor .card .info-text .footer-text p {
+  font-size: 12px;
+}
+
+.instructor .card .info-text .footer-text p i {
+  color: var(--primary);
+}
+
+.instructor .card .image {
+  position: relative;
+}
+
+.instructor .card .social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  position: absolute;
+  padding: 20px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.instructor .card .social-links a {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: var(--dark);
+  border-radius: 6px;
+  background: var(--light);
+  transition: 0.5s all ease;
+}
+
+.instructor .card .social-links a:hover {
+  background: var(--primary);
+  color: var(--light);
+}
+
+/* Read Blogs */
+.read-blog .card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 0;
+  background: var(--light);
+}
+
+.read-blog .card hr {
+  color: #9e9e9e;
+}
+
+.read-blog .card .info-text {
+  padding: 20px;
+}
+
+.read-blog .card h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 10px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.read-blog .card .info-text .text a {
+  color: var(--primary);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.read-blog .card p span {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.read-blog .card .info-text .footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read-blog .card .info-text .sm-texts {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.read-blog .card .info-text .sm-texts p {
+  font-size: 14px;
+}
+
+/* Subscription */
+.subscribe {
+  position: relative;
+  padding: 150px 0;
+}
+
+.subscribe::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  background: var(--light-alt);
+}
+
+.subscribe .card {
+  background: var(--primary);
+  border: 0;
+  position: relative;
+  z-index: 3;
+  border-radius: 20px;
+  padding: 70px;
+}
+
+.subscribe .card img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  z-index: 20;
+}
+
+.subscribe .card h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--light);
+  margin-bottom: 10px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  font-family: var(--sans-serif-alt);
+}
+
+.subscribe .card .input-group input {
+  box-shadow: none;
+  background: var(--light);
+  padding: 15px 20px;
+  border-right: 0;
+}
+
+.subscribe .card .input-group .button {
+  background: var(--secondary);
+  padding: 15px 25px;
+}
+
+/* Footer */
+
+.footer .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer .navbar-brand img {
+  width: 60px;
+}
+
+.footer .navbar-brand span {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: var(--logo);
+  color: var(--primary);
+}
+
+.footer .foot-head {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--sans-serif-alt);
+  color: var(--dark);
+  margin-bottom: 26px;
+}
+
+.footer .para {
+  font-weight: 500;
+}
+
+.footer p a {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 992px) {
+  .header .navbar-nav {
+    text-align: center;
+  }
+
+  .hero .card {
+    flex-direction: column;
+    margin: 40px;
+  }
+
+  .card-info .text {
+    text-align: center;
+  }
+
+  .card-info .image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card-info img {
+    width: 100px;
+    margin: auto;
+  }
+
+  .card-info {
+    padding: 100px 0;
+  }
+
+  .online-courses .nav-pills .nav-link {
+    margin-bottom: 22px;
+  }
+
+  .subscribe .card h3 {
+    line-height: 58px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .heading {
+    font-size: 35px;
+  }
+
+  .subscribe .card img {
+    display: none;
+  }
+
+  .subscribe .card {
+    padding: 40px;
+  }
+
+  .subscribe .card h3 {
+    font-size: 35px;
+    line-height: 44px;
+  }
+
+  .subscribe {
+    padding: 60px 0;
+  }
+}
