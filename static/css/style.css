@@ -32,6 +32,10 @@
   margin: 5px 12px;
 }
 
+.header .navbar .nav-link:hover {
+  color: var(--primary);
+}
+
 .header .navbar .button {
   padding: 18px 30px;
 }
@@ -57,7 +61,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 85%;
+  height: 90%;
   width: 100%;
   background: var(--light-alt);
 }
@@ -330,12 +334,48 @@
   color: var(--light);
 }
 
+.instructor .instructor-carousel .owl-nav {
+  position: absolute;
+  top: -120px;
+  right: 0;
+}
+
+.instructor .instructor-carousel .owl-nav button {
+  height: 45px;
+  width: 65px;
+  color: var(--light);
+  color: var(--primary);
+  font-size: 25px;
+  background: none;
+  transition: 0.5s all ease;
+}
+
+.instructor .instructor-carousel .owl-nav button.owl-next {
+  background: rgba(110, 184, 212, 0.705);
+}
+
+.instructor .instructor-carousel .owl-nav button:hover {
+  color: var(--light);
+  background: var(--primary);
+}
+
 /* Read Blogs */
 .read-blog .card {
   border-radius: 10px;
   overflow: hidden;
   border: 0;
   background: var(--light);
+}
+
+.read-blog .head-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.read-blog .button {
+  padding: 18px 30px;
 }
 
 .read-blog .card hr {
@@ -536,5 +576,22 @@
 
   .subscribe {
     padding: 60px 0;
+  }
+
+  .read-blog .head-blog .heading {
+    margin-bottom: 25px !important;
+  }
+
+  .read-blog .head-blog {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .instructor .instructor-carousel .owl-nav {
+    position: relative;
+    top: 0;
+    left: 0;
   }
 }
